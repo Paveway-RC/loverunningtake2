@@ -4,6 +4,16 @@
     margin: 0;
     box-sizing: 0;
 }
+
+/*General style selector - targets the header, main stuff and the footer*/
+body {
+    min-height: 100vh;
+    display: flex;
+    flex-direction: column;
+    /*General project styles*/
+    color: #3a3a3a;
+}
+
 /*Header*/
 header {
     background-color: lightcoral;
@@ -11,6 +21,8 @@ header {
 /*Main content*/
 main {
     background-color: lightblue;
+    /*Forces the main content to take up any space and push the footer down*/
+    flex: 1 0 auto;
 }
 /*Footer*/
 footer {
